@@ -76,7 +76,7 @@ The system exposes a **REST API** that can be integrated into design tools, web 
 
 ## Architecture
 
-'''
+```
 Client (UI / Product)
         |
         v
@@ -90,7 +90,7 @@ GPU Worker (Stable Diffusion Inpainting)
         |
         v
 Generated Image Output
-'''
+```
 
 ---
 
@@ -137,7 +137,7 @@ Generated Image Output
 
 ## Repository Structure
 
-'''
+```
 photoshop-ai-smart-edit/
 │
 ├── apps/
@@ -174,7 +174,7 @@ photoshop-ai-smart-edit/
 ├── docker-compose.yml
 ├── requirements.txt
 └── README.md
-'''
+```
 
 ---
 
@@ -182,9 +182,9 @@ photoshop-ai-smart-edit/
 
 ### Inpaint Image
 
-'''
+```
 POST /edit/inpaint
-'''
+```
 
 **Input**
 
@@ -195,21 +195,21 @@ POST /edit/inpaint
 
 Example:
 
-'''
+```
 {
   "prompt": "remove the person and add a soft city skyline",
   "num_steps": 30,
   "guidance_scale": 7.5
 }
-'''
+```
 
 ---
 
 ### Health Check
 
-'''
+```
 GET /health
-'''
+```
 
 ---
 
@@ -247,26 +247,26 @@ Supported:
 
 ## Installation
 
-'''
+```
 git clone https://github.com/yourusername/photoshop-ai-smart-edit.git
 cd photoshop-ai-smart-edit
-'''
+```
 
 Create virtual environment:
 
-'''
+```
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-'''
+```
 
 ---
 
 ## Running Locally
 
-'''
+```
 docker-compose up --build
-'''
+```
 
 This launches:
 
@@ -302,9 +302,9 @@ Supports:
 
 Deploy:
 
-'''
+```
 kubectl apply -f infrastructure/kubernetes/
-'''
+```
 
 ---
 
