@@ -2,6 +2,8 @@
 
 **Diffusion-based image editing API for inpainting, object removal, and prompt-driven edits**
 
+![](./imgs/photoshop-ai-smart-edit.png)
+
 ---
 
 ## Overview
